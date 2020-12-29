@@ -1,0 +1,22 @@
+{
+  "name": "podcast-widget-cdn",
+  "version": "0.0.2",
+  "repository": "https://github.com/stephenbeckett/podcast-widget-cdn.git",
+  "author": "Stephen Beckett <2587374+stephenbeckett@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-static": "^0.7.11"
+  }, 
+  "scripts": {
+    "start": "static -p 8888",
+    "clean": "rm -rf ./dist/",
+    "build": "yarn copy-images && webpack",
+    "copy-images": "yarn clean && mkdir -p ./dist/img/ && cp -R ./example/img/ ./dist/img/ && rm -rf ./dist/img/demo"
+  },
+  "devDependencies": {
+    "css-loader": "^5.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0"
+  }
+}
