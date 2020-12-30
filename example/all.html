@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Podcast Widget Example - All options</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>Sorry but this doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    
+    <div id="podcast-widget"></div>
+    <!-- Load locally: -->
+    <script src="../dist/widget.js" type="text/javascript"></script>
+    <!-- Or load the latest build from the CDN: -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/stephenbeckett/podcast-widget-cdn/dist/widget.js" type="text/javascript"></script> -->
+    <script type="text/javascript">
+      PodcastRedirectWidget(
+      {
+        'website': "https://wapin7.com",
+        'podchaser': "https://podchaser.com/wapin7",
+        'podcast-addict': "https://podcastaddict.com/wapin7",
+        'castbox': "https://castbox.com/wapin7",
+        'apple-podcasts-mobile': "https://fakelink.com/wapin7",
+        'spotify-mobile': "https://fakelink.com/wapin7",
+        'spotify-desktop': "https://fakelink.com/wapin7",
+        'acast': "https://fakelink.com/wapin7",
+        'stitcher': "https://fakelink.com/wapin7",
+        'pocket-casts': "https://fakelink.com/wapin7",
+        'tunein': "https://fakelink.com/wapin7",
+        'podbean': "https://fakelink.com/wapin7",
+        'deezer': "https://fakelink.com/wapin7",
+        'google-podcasts': "https://fakelink.com/wapin7",
+        'iheart-radio': "https://fakelink.com/wapin7"
+      }, 
+      {
+        defaultAction: 'subscribe',
+        title: "War and Peace in just 7 Years",
+        subtitle: "'My Dad Wrote a Porno' but Russia, no porno, and dad is Leo Tolstoy.",
+        showHeader: true,
+        headerHeight: '250px',
+        headerBackgroundImage: "img/demo/WarAndPeaceIn7Years_WAPIN7_cover_alt_@x2.jpg",
+        headerBackgroundImagePosition: "center center", // Uses same syntax as https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+        headerBackgroundColor: "orange",
+        headerBackgroundGradient: true,
+        headerSocialButtonColor: "white",
+        headerTitleColor: "white",
+        headerSubtitleColor: "white",
+        background: '', // Hex code or URL to image
+        backgroundTintColor: '#311B92',
+        backgroundTintOpacity: '0.7',
+        numPrimaryApps: 3,
+        showSecondaryApps: true,
+        rateText: "Rate & Review",
+        subscribeText: "Subscribe",
+        showCallout: true,
+        allowActionSwitching: true,
+        switchTitleTextRate: "Don't forget to...",
+        switchButtonTextRate: 'Subscribe!',
+        switchTitleTextSubscribe: "Already subscribed?",
+        switchButtonTextSubscribe: 'Leave a rating!',
+        switchTitleColor: "white",
+        switchButtonColor: "#F44336",
+        switchAlwaysCompactStyle: false
+      },
+      'rate',
+      {
+        website: 'https://wapin7.com',
+        instagram: 'https://instagram.com/wapin7podcast',
+        email: 'mailto:tolstoy@wapin7.com',
+      },
+      [
+      'apple-podcasts-mobile', 
+      'spotify-mobile', 
+      'google-podcasts',
+      'stitcher',
+      'podcast-addict',
+      'acast'
+      ],
+      '#podcast-widget'
+      );
+    </script>
+  </body>
+</html>
