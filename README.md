@@ -1,4 +1,6 @@
-# smart-podcast-widget <!-- omit in toc -->
+This document is currently a WIP and contains errors & omissions 
+
+# smart-podcast-widget
 **A smart widget that makes it simple for people to subscribe and rate your podcast.**
 
 * Adapts depending on the user's device, so they always see the right apps & links for them.
@@ -154,7 +156,7 @@ Keys/property names must exactly match one of:
 ```
 
 ### PriorityApps (optional)
-A list of app IDs specifiying which apps should be shown full size in the widget, as well as the order of the apps. IDs must exactly match a key from the `Urls` parameter.
+A list of app IDs specifying which apps should be shown full size in the widget, as well as the order of the apps. IDs must exactly match a key from the [Urls](#urls-required) parameter.
 
 By default `PriorityApps` is:
 ```js
