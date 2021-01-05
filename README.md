@@ -22,7 +22,7 @@ This document is currently a WIP and contains errors & omissions
 
 ```html
 <div id="podcast-widget"></div>
-<script src="https://cdn.jsdelivr.net/gh/stephenbeckett/smart-podcast-widget" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/smart-podcast-widget" type="text/javascript"></script>
 <script type="text/javascript">
   PodcastRedirectWidget(
   // 2. ✅ Add your podcast's links here & delete any you don't want to use: 
@@ -53,12 +53,12 @@ This document is currently a WIP and contains errors & omissions
 </script>
 ```
 
-See the [full code for this example](/example/embedded-basic.html), or [Remix it on Glitch]().
+See the [full code for this example](/examples/embedded-basic.html), or [Remix it on Glitch]().
 
 You can customise nearly everything in the widget - see the [Examples](#examples) and [Documentation](#documentation).
 
 ## Add as a standalone page
-Copy the [Standalone Page example](/example/standalone-basic.html) or use the _Embedded_ code above, but with `standalone: true`, e.g:
+Copy the [Standalone Page example](/examples/standalone-basic.html) or use the _Embedded_ code above, but with `standalone: true`, e.g:
 ```js
 {
   standalone: true, // ✅ Set this to true 
@@ -76,21 +76,21 @@ These examples show how you can customise appearance & content of the widget. Se
 All of these examples are available to [remix on Glitch]().
 
 ## Embedded in a page
-* [Basic options](/example/embedded-basic.html)
-* [Basic options + app ordering & prioritisation](/example/embedded-basic-app-priority.html)
-* [Basic options + events](/example/embedded-basic-events.html)
-* [Required options only](/example/embedded-required-parameters.html)
-* [All parameters](/example/embedded-all-parameters.html)
+* [Basic options](/examples/embedded-basic.html)
+* [Basic options + app ordering & prioritisation](/examples/embedded-basic-app-priority.html)
+* [Basic options + events](/examples/embedded-basic-events.html)
+* [Required options only](/examples/embedded-required-parameters.html)
+* [All parameters](/examples/embedded-all-parameters.html)
 
 ## As a Standalone page
 The _Embedded_ examples above will also work in _Standalone_ mode providing `standalone: true` is set as a theme parameter.
 
-* [Basic options](/example/standalone-basic.html)
-* [Basic options + background image](/example/standalone-basic-background-image.html)
-* [Basic options + background colour](/example/standalone-basic-background-colour.html)
+* [Basic options](/examples/standalone-basic.html)
+* [Basic options + background image](/examples/standalone-basic-background-image.html)
+* [Basic options + background colour](/examples/standalone-basic-background-colour.html)
 
 # Documentation
-Take a look at the [all parameters example](/example/embedded-all-parameters.html) to see the options detailed below, or [remix the example on Glitch]() to try it out now. There are more examples in the [Examples](#examples) section.
+Take a look at the [all parameters example](/examples/embedded-all-parameters.html) to see the options detailed below, or [remix the example on Glitch]() to try it out now. There are more examples in the [Examples](#examples) section.
 
 ## Initialisation
 The widget will only be shown once the `PodcastRedirectWidget` function is called. Currently there is no way to change parameters after initialisation.
@@ -182,7 +182,7 @@ The ID of an existing page element that will be used as the container of the wid
 If an element matching `ElementId` cannot be found in the page when `PodcastRedirectWidget()` is called, the widget will not appear and an error will output to the console. 
 
 ## Events
-See the [Events example](/example/embedded-basic-events.html). The root widget container element produces the following events:
+See the [Events example](/examples/embedded-basic-events.html). The root widget container element produces the following events:
 
 | Name                      | Description                                                                                                                                                                                          |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
