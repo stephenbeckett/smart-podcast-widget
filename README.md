@@ -12,7 +12,7 @@
 [Try it now](https://www.google.com) | [Copy the code](https://www.google.com)
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Full page") | [Remix on Glitch](https://www.google.com)
 
-# Installation
+# Quick Start
 ## Embed in your website
 1. ✅  &nbsp;Paste this in your page wherever you want the widget to appear:
 
@@ -136,9 +136,9 @@ If you don't want to show a particular app, just delete the line or set it to an
 ### Theme (required*)
 Customise the content & look of the widget with these properties:
 
-| Property name | Default | Description |
-| ------------- | ------- | ----------- |
-| WIP...        |         |             |
+| Property name | Type | Default | Description |
+| ------------- | ---- | ------- | ----------- |
+| WIP...        |      |         |             |
 
 ### SocialLinks (optional)
 An object containing your the social URLs associated with your podcast as key-value pairs.
@@ -182,10 +182,10 @@ If an element matching `ElementId` cannot be found in the page when `PodcastRedi
 ## Events
 See the [Events example](/example/embedded-basic-events.html). The root widget container element produces the following events:
 
-| Name                      | Description                                                                                                                                                                     |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| app-choice (appId)        | Fires when the user first clicks on an app to access a link, or the rate instructions. `appId` will be one of the property names listed in [Urls](#urls-required).                                                                                           |
-| action-changed (actionId) | Fires when the action changes, e.g. the user presses the 'Rate' button when in 'Subscribe' mode. `actionId` will be one of: `rate` or `subscribe`                                                  |
+| Name                      | Description                                                                                                                                                                                          |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| app-choice (appId)        | Fires when the user first clicks on an app to access a link, or the rate instructions. `appId` will be one of the property names listed in [Urls](#urls-required).                                   |
+| action-changed (actionId) | Fires when the action changes, e.g. the user presses the 'Rate' button when in 'Subscribe' mode. `actionId` will be one of: `rate` or `subscribe`                                                    |
 | ready (platformId)        | Fires when the widget component has loaded, includes the detected platform ID of the device. `platformId` will be one of: `windows`, `osx`, `android`, `ios`, `windows-phone`, `linux` or `unknown`. |
 
 # Feature requests
