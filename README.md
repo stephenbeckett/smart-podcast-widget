@@ -1,4 +1,4 @@
-# podcast-widget-cdn
+# smart-podcast-widget <!-- omit in toc -->
 **A smart widget that makes it simple for people to subscribe and rate your podcast.**
 
 * Adapts depending on the user's device, so they always see the right apps & links for them.
@@ -20,27 +20,27 @@
 
 ```html
 <div id="podcast-widget"></div>
-<script src="https://cdn.jsdelivr.net/gh/stephenbeckett/podcast-widget-cdn" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/stephenbeckett/smart-podcast-widget" type="text/javascript"></script>
 <script type="text/javascript">
   PodcastRedirectWidget(
   // 2. ✅ Add your podcast's links here & delete any you don't want to use: 
   {
-    'website': "https://wapin7.com",
-    'podchaser': "https://podchaser.com/wapin7",
-    'podcast-addict': "https://podcastaddict.com/wapin7",
-    'castbox': "https://castbox.com/wapin7",
-    'apple-podcasts-mobile': "https://fakelink.com/wapin7",
-    'spotify-mobile': "https://fakelink.com/wapin7",
-    'spotify-desktop': "https://fakelink.com/wapin7",
-    'acast': "https://fakelink.com/wapin7",
-    'stitcher': "https://fakelink.com/wapin7",
-    'pocket-casts': "https://fakelink.com/wapin7",
-    'tunein': "https://fakelink.com/wapin7",
-    'podbean': "https://fakelink.com/wapin7",
-    'deezer': "https://fakelink.com/wapin7",
-    'google-podcasts': "https://fakelink.com/wapin7",
-    'iheart-radio': "https://fakelink.com/wapin7",
-    'rss': "https://wapin7.com"
+    'website': 'https://wapin7.com',
+    'podchaser': 'https://podchaser.com/wapin7',
+    'podcast-addict': 'https://podcastaddict.com/wapin7',
+    'castbox': 'https://castbox.com/wapin7',
+    'apple-podcasts-mobile': 'https://fakelink.com/wapin7',
+    'spotify-mobile': 'https://fakelink.com/wapin7',
+    'spotify-desktop': 'https://fakelink.com/wapin7',
+    'acast': 'https://fakelink.com/wapin7',
+    'stitcher': 'https://fakelink.com/wapin7',
+    'pocket-casts': 'https://fakelink.com/wapin7',
+    'tunein': 'https://fakelink.com/wapin7',
+    'podbean': 'https://fakelink.com/wapin7',
+    'deezer': 'https://fakelink.com/wapin7',
+    'google-podcasts': 'https://fakelink.com/wapin7',
+    'iheart-radio': 'https://fakelink.com/wapin7',
+    'rss': 'https://wapin7.com'
   }, 
   {
     // 3. ✅ Customise the appearance (see the examples & docs for more options)
@@ -56,22 +56,22 @@ See the [full code for this example](/example/embedded-basic.html), or [Remix it
 You can customise nearly everything in the widget - see the [Examples](#examples) and [Documentation](#documentation).
 
 ## Add as a standalone page
-Copy the [Standalone page example](/example/standalone-basic.html) or use the Embed code above, but with `standalone: true`, e.g:
+Copy the [Standalone Page example](/example/standalone-basic.html) or use the _Embedded_ code above, but with `standalone: true`, e.g:
 ```js
 {
+  standalone: true, // ✅ Set this to true 
   title: "Podcast Name Here",
   subtitle: "This is a short description of the podcast, it should fit in a couple of lines.",
-  defaultAction: 'subscribe', 
-  standalone: true // ✅ Set this to true 
+  defaultAction: 'subscribe' 
 }
 ```
 
 You can customise nearly everything in the widget - see the [Examples](#examples) and [Documentation](#documentation).
 
 # Examples
-Take a look at these examples to see how you can customise appearance & content of the widget.
+These examples show how you can customise appearance & content of the widget. See the [Documentation](#documentation) for detailed information. 
 
-See the [Documentation](#documentation) for detailed information.
+All of these examples are available to [remix on Glitch]().
 
 ## Embedded in a page
 * [Basic options](/example/embedded-basic.html)
@@ -81,14 +81,14 @@ See the [Documentation](#documentation) for detailed information.
 * [All parameters](/example/embedded-all-parameters.html)
 
 ## As a Standalone page
-The Embedded examples above will also work in Standalone mode providing `standalone: true` is set as a theme parameter.
+The _Embedded_ examples above will also work in _Standalone_ mode providing `standalone: true` is set as a theme parameter.
 
 * [Basic options](/example/standalone-basic.html)
 * [Basic options + background image](/example/standalone-basic-background-image.html)
 * [Basic options + background colour](/example/standalone-basic-background-colour.html)
 
 # Documentation
-Take a look at the [all parameters example](/example/embedded-all-parameters.html) to see the options detailed below, or [remix the example on Glitch]() to try it out now.
+Take a look at the [all parameters example](/example/embedded-all-parameters.html) to see the options detailed below, or [remix the example on Glitch]() to try it out now. There are more examples in the [Examples](#examples) section.
 
 ## Initialisation
 The widget will only be shown once the `PodcastRedirectWidget` function is called. Currently there is no way to change parameters after initialisation.
@@ -98,32 +98,33 @@ The widget will only be shown once the `PodcastRedirectWidget` function is calle
 | Parameter name | Required (*)? | Description                                                                                        |
 | -------------- | ------------- | -------------------------------------------------------------------------------------------------- |
 | Urls           | Yes           | URLs for the  app & website listings associated with your podcast                                  |
-| Theme          | Yes           | Custom theming options that will override the default settings                                            |
+| Theme          | Yes           | Custom theming options that will override the default settings                                     |
 | SocialLinks    | No            | Social URLs associated with your podcast, e.g. twitter, facebook, your website                     |
 | PriorityApps   | No            | Specifies which apps should always shown full size in the widget, as well as the order of the apps |
-| ElementId      | No            | The ID of the element that should contain the widget (by default `#podcast-widget`)                    |
+| ElementId      | No            | The ID of the element that should contain the widget (by default `#podcast-widget`)                |
 
 ### Urls (required*)
 An object containing the various app & website listing URLs of your podcast as key-value pairs.
 
-Keys must exactly match one of:
+Keys/property names must exactly match one of:
 ```js
 {
-  'website': "https://wapin7.com",
-  'podchaser': "https://podchaser.com/wapin7",
-  'podcast-addict': "https://podcastaddict.com/wapin7",
-  'castbox': "https://castbox.com/wapin7",
-  'apple-podcasts-mobile': "https://fakelink.com/wapin7",
-  'spotify-mobile': "https://fakelink.com/wapin7",
-  'spotify-desktop': "https://fakelink.com/wapin7",
-  'acast': "https://fakelink.com/wapin7",
-  'stitcher': "https://fakelink.com/wapin7",
-  'pocket-casts': "https://fakelink.com/wapin7",
-  'tunein': "https://fakelink.com/wapin7",
-  'podbean': "https://fakelink.com/wapin7",
-  'deezer': "https://fakelink.com/wapin7",
-  'google-podcasts': "https://fakelink.com/wapin7",
-  'iheart-radio': "https://fakelink.com/wapin7"
+  'website': 'https://wapin7.com',
+  'podchaser': 'https://podchaser.com/wapin7',
+  'podcast-addict': 'https://podcastaddict.com/wapin7',
+  'castbox': 'https://castbox.com/wapin7',
+  'apple-podcasts-mobile': 'https://fakelink.com/wapin7',
+  'spotify-mobile': 'https://fakelink.com/wapin7',
+  'spotify-desktop': 'https://fakelink.com/wapin7',
+  'acast': 'https://fakelink.com/wapin7',
+  'stitcher': 'https://fakelink.com/wapin7',
+  'pocket-casts': 'https://fakelink.com/wapin7',
+  'tunein': 'https://fakelink.com/wapin7',
+  'podbean': 'https://fakelink.com/wapin7',
+  'deezer': 'https://fakelink.com/wapin7',
+  'google-podcasts': 'https://fakelink.com/wapin7',
+  'iheart-radio': 'https://fakelink.com/wapin7',
+  'rss': 'xxx'
 }
 ```
 
@@ -135,14 +136,14 @@ If you don't want to show a particular app, just delete the line or set it to an
 ### Theme (required*)
 Customise the content & look of the widget with these properties:
 
-| Property name | Default | Description
-| --- | --- | --- |
-| WIP... | | |
+| Property name | Default | Description |
+| ------------- | ------- | ----------- |
+| WIP...        |         |             |
 
 ### SocialLinks (optional)
 An object containing your the social URLs associated with your podcast as key-value pairs.
 
-Keys must exactly match one of:
+Keys/property names must exactly match one of:
 ```js
 {
   website: 'https://wapin7.com',
@@ -167,31 +168,31 @@ By default `PriorityApps` is:
 ]
 ```
 
-Priority apps will be shown in the full size slots (the ones with a Subscribe/Rate button) rather than just as icons. If there are more priority apps than the value specified by `theme.numPrimaryApps` then the excess apps will be added to the start of the icon only list.
+Priority apps will be shown in the full size slots (i.e. with a Subscribe/Rate button) rather than just as icons. If there are more priority apps than the value specified by `theme.numPrimaryApps` then the excess apps will be added to the start of the icon only list.
 
 The order of `PriorityApps` determines the order of apps shown in the visual list.
 
-If an app is not available on a given device, then it will never be shown to a user on that device. For example, `apple-podcasts-mobile` will never be shown to an Android user, even though it is in the priority list.
+If an app is not available on a given device, then it will never be shown to a user on that device. For example, the iOS only app `apple-podcasts-mobile` will never be shown to an Android user, even though it is in the priority list.
 
 ### ElementId (optional)
-The ID of an existing page element that will become the container of the widget when it is injected, by default this is `#podcast-widget`. 
+The ID of an existing page element that will be used as the container of the widget when it is injected, by default this is `#podcast-widget`. 
 
-If `ElementId` cannot be found, the widget will not appear and an error will output to the console. 
+If an element matching `ElementId` cannot be found in the page when `PodcastRedirectWidget()` is called, the widget will not appear and an error will output to the console. 
 
 ## Events
 See the [Events example](/example/embedded-basic-events.html). The root widget container element produces the following events:
 
 | Name                      | Description                                                                                                                                                                     |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| app-choice (appId)        | Fires when the user first clicks on an app to access a link, or the rate instructions                                                                                           |
-| action-changed (actionId) | Fires when the action changes, e.g. the user presses the 'Rate' button when in 'Subscribe' mode                                                                                 |
-| ready (platformId)        | Fires when the widget component has loaded, includes the detected platform ID of the device, one of: `windows`, `osx`, `android`, `ios`, `windows-phone`, `linux` or `unknown`. |
+| app-choice (appId)        | Fires when the user first clicks on an app to access a link, or the rate instructions. `appId` will be one of the property names listed in [Urls](#urls-required).                                                                                           |
+| action-changed (actionId) | Fires when the action changes, e.g. the user presses the 'Rate' button when in 'Subscribe' mode. `actionId` will be one of: `rate` or `subscribe`                                                  |
+| ready (platformId)        | Fires when the widget component has loaded, includes the detected platform ID of the device. `platformId` will be one of: `windows`, `osx`, `android`, `ios`, `windows-phone`, `linux` or `unknown`. |
 
 # Feature requests
 The underlying Vue/Vuetify component source code for this widget is not currently available, but may be released in the future. In the meantime feel free to make a feature request by raising a new issue. 
 
 Possible future features:
 * Font customisation
-* Support for more apps & websites
+* Support for more podcast apps & websites
 * Embedded RSS reader & audio player
 * Integration with analytics services
