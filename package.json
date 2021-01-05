@@ -1,6 +1,6 @@
 {
-  "name": "podcast-widget-cdn",
-  "version": "0.0.3",
+  "name": "smart-podcast-widget",
+  "version": "0.0.4",
   "repository": "https://github.com/stephenbeckett/podcast-widget-cdn.git",
   "author": "Stephen Beckett <2587374+stephenbeckett@users.noreply.github.com>",
   "license": "MIT",
