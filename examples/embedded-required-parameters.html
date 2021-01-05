@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Podcast Widget Example - Basic options</title>
+    <title>Podcast Widget Example - Required options</title>
   </head>
   <body>
     <noscript>
@@ -15,9 +15,10 @@
     <!-- Load locally: -->
     <script src="../dist/widget.js" type="text/javascript"></script>
     <!-- Or load the latest build from the CDN: -->
-    <!-- <script src="https://cdn.jsdelivr.net/gh/stephenbeckett/smart-podcast-widget" type="text/javascript"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/smart-podcast-widget" type="text/javascript"></script> -->
     <script type="text/javascript">
       PodcastRedirectWidget(
+      // You must specify at least one app url:
       {
         'website': "https://wapin7.com",
         'podchaser': "https://podchaser.com/wapin7",
@@ -36,17 +37,7 @@
         'iheart-radio': "https://fakelink.com/wapin7"
       }, 
       {
-        defaultAction: 'subscribe',
         title: "War and Peace in just 7 Years",
-        subtitle: "'My Dad Wrote a Porno' but Russia, no porno, and dad is Leo Tolstoy.",
-        headerBackgroundImage: "img/WarAndPeaceIn7Years_WAPIN7_cover_alt_@x2.jpg",
-        headerBackgroundImagePosition: "center 24%",
-        backgroundTintColor: '#311B92',
-      },
-      {
-        website: 'https://wapin7.com',
-        instagram: 'https://instagram.com/wapin7podcast',
-        email: 'mailto:tolstoy@wapin7.com'
       });
     </script>
   </body>
