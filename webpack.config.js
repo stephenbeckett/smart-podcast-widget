@@ -3,10 +3,13 @@ const CopyPlugin = require("copy-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 
 module.exports = {
-  entry: './src/build.js',
+  entry: {
+    'loader': './src/loader.js',
+    'widget': './src/widget.js',
+  },
   output: {
-    filename: 'widget.js',
     path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js',
   },
   module: {
     rules: [

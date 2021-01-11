@@ -1,7 +1,7 @@
 This document is currently a WIP and contains errors & omissions 
 
 # smart-podcast-widget
-**A smart widget that makes it simple for people to subscribe and rate your podcast.**
+**Make it easy for people to subscribe and rate your podcast**
 
 * Adapts depending on the user's device, so they always see the right apps & links for them.
 * Embeds into your existing website, or as its own page/microsite.
@@ -88,6 +88,14 @@ The _Embedded_ examples above will also work in _Standalone_ mode providing `sta
 * [Basic options](/examples/standalone-basic.html)
 * [Basic options + background image](/examples/standalone-basic-background-image.html)
 * [Basic options + background colour](/examples/standalone-basic-background-colour.html)
+
+## Run the examples locally
+Clone or download this repository then run:
+```
+  npm install
+  npm run start
+```
+and visit [http://localhost:8888/examples](http://localhost:8888/examples)
 
 # Documentation
 Take a look at the [all parameters example](/examples/embedded-all-parameters.html) to see the options detailed below, or [remix the example on Glitch]() to try it out now. There are more examples in the [Examples](#examples) section.

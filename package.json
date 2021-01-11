@@ -1,10 +1,10 @@
 {
   "name": "smart-podcast-widget",
   "version": "0.0.5",
-  "repository": "https://github.com/stephenbeckett/podcast-widget-cdn.git",
+  "repository": "https://github.com/stephenbeckett/smart-podcast-widget.git",
   "author": "Stephen Beckett <2587374+stephenbeckett@users.noreply.github.com>",
   "license": "MIT",
-  "jsdelivr": "./dist/widget.js",
+  "jsdelivr": "./dist/loader.js",
   "dependencies": {
     "node-static": "^0.7.11"
   },

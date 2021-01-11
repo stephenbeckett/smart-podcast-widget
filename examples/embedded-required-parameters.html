@@ -4,41 +4,43 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Podcast Widget Example - Required options</title>
+    <title>Podcast Widget Example - Embedded - Required parameters</title>
   </head>
   <body>
-    <noscript>
-      <strong>Sorry but this doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    
+
+    <!-- Copy below this line -->
+
     <div id="podcast-widget"></div>
-    <!-- Load locally: -->
-    <script src="../dist/widget.js" type="text/javascript"></script>
-    <!-- Or load the latest build from the CDN: -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/smart-podcast-widget" type="text/javascript"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/smart-podcast-widget" type="text/javascript"></script>
     <script type="text/javascript">
-      PodcastRedirectWidget(
+      SmartPodcastWidget(
       // You must specify at least one app url:
       {
-        'website': "https://wapin7.com",
-        'podchaser': "https://podchaser.com/wapin7",
-        'podcast-addict': "https://podcastaddict.com/wapin7",
-        'castbox': "https://castbox.com/wapin7",
-        'apple-podcasts-mobile': "https://fakelink.com/wapin7",
-        'spotify-mobile': "https://fakelink.com/wapin7",
-        'spotify-desktop': "https://fakelink.com/wapin7",
-        'acast': "https://fakelink.com/wapin7",
-        'stitcher': "https://fakelink.com/wapin7",
-        'pocket-casts': "https://fakelink.com/wapin7",
-        'tunein': "https://fakelink.com/wapin7",
-        'podbean': "https://fakelink.com/wapin7",
-        'deezer': "https://fakelink.com/wapin7",
-        'google-podcasts': "https://fakelink.com/wapin7",
-        'iheart-radio': "https://fakelink.com/wapin7"
+        "website": "https://wapin7.com",
+        "podchaser": "https://www.podchaser.com/podcasts/war-and-peace-in-just-7-years-1260980",
+        "apple-podcasts-mobile": "https://podcasts.apple.com/gb/podcast/war-and-peace-in-just-7-years-wapin7/id1519411513",
+        "spotify-mobile": "https://open.spotify.com/show/3IvYxDXt6MPLl6ZhB6lAkd",
+        "spotify-desktop": "https://open.spotify.com/show/3IvYxDXt6MPLl6ZhB6lAkd",
+        "acast": "https://play.acast.com/s/war-and-peace-in-just-7-years-wapin7com",
+        "stitcher": "https://www.stitcher.com/show/war-and-peace-in-just-7-years-wapin7com",
+        "tunein": "https://tunein.com/podcasts/Comedy-Podcasts/War-in-Peace-in-just-7-years---WAPIN7com-p1335838/",
+        "deezer": "https://www.deezer.com/en/show/1400772",
+        "google-podcasts": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDE0MjcxLnJzcw?ved=2ahUKEwjiv66Iu5rqAhUW-hoKHbaXA_QQ4aUDegQIARAC&hl=en-GB",
+        "iheart-radio": "https://www.iheart.com/podcast/269-war-and-peace-in-just-7-ye-68320041/",
+        "amazon-music": "https://music.amazon.co.uk/podcasts/738c75d3-98d3-4d10-bcba-7c38c8d6f2c5/War-and-Peace-in-just-7-years-WAPIN7",
+        "castro": "https://castro.fm/podcast/b495241a-445b-463c-a2dc-cd4864ff2ad7",
+        "listen-notes": "https://www.listennotes.com/podcasts/war-and-peace-in-just-7-years-wapin7-will-WDt7HlFjpkM/",
+        "pocket-casts": "https://pca.st/ogm5baca",
+        "podcast-addict": "https://placeholder-podcast-addict-link.com/wapin7",
+        "podbean": "https://placeholder-podbean-link.com/wapin7",
+        "castbox": "https://placeholder-castbox-link.com/wapin7"
       }, 
       {
         title: "War and Peace in just 7 Years",
       });
     </script>
+
+    <!-- Copy above this line -->
+
   </body>
 </html>
